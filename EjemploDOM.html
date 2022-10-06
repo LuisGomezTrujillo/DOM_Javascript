@@ -5,12 +5,16 @@
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;900&display=swap" rel="stylesheet">
-   
+       
 </head>
 <body>
-    <header>
+    <header class="encabezado">
+        <div class="logo">
+            <img src="./images/logo.png" width="150px" alt="Logo Jump Force" >    
+            <img src="./icons/icon_menu.svg" alt="menu" class="menu-ham">        
+        </div>
         <nav class="slidemenu">
-  
+            
             <!-- Item 1 -->
             <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
             <label for="slide-item-1"><p class="icon">♬</p><span>Home</span></label>
@@ -34,14 +38,34 @@
               <div class="bar"></div>
             </div>
             
+            
           </nav>
+
+          
+            
+          <div class="mobile-menu inactive">
+            <ul>
+              <li>
+                <a href="/">HOME</a>
+              </li>
+              <li>
+                <a href="/">About</a>
+              </li>
+              <li>
+                <a href="/">Folio</a>
+              </li>
+              <li>
+                <a href="/">Blog</a>
+              </li>              
+            </ul>        
+        </div>
     </header>
     <main>
         <h1>Bienvenidos a las noticias</h1>
 
         <div class="container">
-            <section class="section-a">
-                <h2 id="titulo1">
+            <section class="section section-a">
+                <h2 id="titulo1" class="titulo">
                     Hubble y Webb capturan el momento en el que misión de la NASA impacta contra un asteroide
                 </h2>
                 <p>
@@ -50,8 +74,8 @@
                 </p>
                 <button>Leer Mas</button>
             </section>
-            <section class="section-b">
-                <h2 id="titulo2">
+            <section class="section section-b">
+                <h2 id="titulo2" class="titulo">
                     Explotarlos vs. desviarlos: ¿qué opciones existen para evitar que un asteroide choque con la Tierra?
                 </h2>
                 <p>
@@ -64,12 +88,18 @@
                 <button>Read More</button>
             </section>
             <section class="section-c">
-                <p id="para">Cualquier texto que cambiará de color</p>
-                <button onclick="changeColor('blue');">Azul</button>
-                <button onclick="changeColor('red');">Rojo</button>
+                <p id="para">El Texto del Párrafo cambiará de color</p>
+                <button onclick="changeColorParrafo('#0a3c91');">Azul</button>
+                <button onclick="changeColorParrafo('#fc3c23');">Rojo</button>
+            </section>
+            <section class="section-d">
+                <p>Los títulos de noticia cambiarán de color</p>
+                <button onclick="changeColorTitulo('#0a3c91');">Azul</button>
+                <button onclick="changeColorTitulo('#fc3c23');">Rojo</button>
             </section>
         </div>
     </main>
+    <footer><a href="https://github.com/LuisGomezTrujillo/DOM_Javascript"></a></footer>
     <script src="js/main.js"></script>
 </body>
 </html>
