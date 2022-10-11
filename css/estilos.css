@@ -8,6 +8,71 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;    
+}
+
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 50%;
+  transition: all .8s;
+  cursor: pointer;
+  
+}
+
+.icon:hover {
+  background-color: #e60073;
+  box-shadow:  0 0 20px #e60073;
+
+}
+
+.icon:hover:nth-child(2) {
+  background-color: #e3f218; 
+  box-shadow:  0 0 20px #e3f218;
+}
+
+.icon:hover:nth-child(3) {
+  background-color: #a618f2;
+  box-shadow: 0 0 20px #a618f2 ;
+}
+
+.icon:hover:nth-child(4) {
+  background-color: #1da1f2;
+  box-shadow:  0 0 20px #1da1f2 ;
+}
+
+.icon i {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 3.7rem;
+}
+
+svg circle {
+  stroke-dasharray: 150;
+  transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 220;
+}
+
 
 .inactive {
   display: none;
@@ -39,71 +104,6 @@ html {
     display: none;
   }
   
-  .slidemenu{
-    font-size: 3rem;
-    font-family: arial, sans-serif;
-    max-width: 125rem;
-    margin: 5rem auto;
-    overflow: hidden;
-    padding: 20px;
-    
-  }
-  
-  .slidemenu label{
-    width: 25%;
-    text-align: center;
-    display: block;
-    float: left;
-    color: #333;
-    opacity: 0.2;
-  
-  }
-  
-  .slidemenu label:hover{
-    cursor: pointer;
-    color: #666;    
-  }
-  
-  .slidemenu label span{
-    display: block;
-    padding: 1rem;    
-  }
-  
-  .slidemenu label .icon{
-    font-size: 2rem;
-    border: solid 0.2rem #333;
-    text-align: center;
-    height: 5rem;
-    width: 5rem;
-    display: block;
-    margin: 0 auto;
-    line-height: 5rem;
-    border-radius: 50%;
-  }
-  
-  /*Bar Style*/
-  
-  .slider{
-    width: 100%;
-    display: block;
-    background: #ccc;
-    margin-top: 1rem;
-    border-radius: 0.5rem;
-  }
-  
-  .slider .bar{
-    width: 25%;
-    height: 0.5rem;
-    background: #333;
-    border-radius: 0.5rem;
-  }
-  
-  /*Animations*/
-  .slidemenu label, .slider .bar {
-    transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-  }
   
   /*Toggle*/
   

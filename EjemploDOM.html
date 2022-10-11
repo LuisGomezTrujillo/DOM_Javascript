@@ -5,56 +5,40 @@
     <link rel="shortcut icon" href="./img/periodico.png">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Efecto hover en redes sociales</title>
    
 </head>
 <body>
-    <header>
-        <div class="logo-menu-ham">
-            <img src="./img/logo_jumpforce.png" width="150px" alt="Logo Jump Force" >
-            <img src="./icons/icon_menu1.svg" alt="menu" class="menu-ham">          
-        </div>
-        <nav class="slidemenu">
-  
-            <!-- Item 1 -->
-            <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
-            <label for="slide-item-1"><p class="icon">♬</p><span>Home</span></label>
-            
-            <!-- Item 2 -->
-            <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
-            <label for="slide-item-2"><p class="icon">★</p><span>About</span></label>
-            
-            <!-- Item 3 -->
-            <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
-            <label for="slide-item-3"><p class="icon">✈</p><span>Folio</span></label>
-            
-            <!-- Item 4 -->
-            <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
-            <label for="slide-item-4"><p class="icon">✎</p><span>Blog</span></label>
-            
-            <div class="clear"></div>
-            
-            <!-- Bar -->
-            <div class="slider">
-              <div class="bar"></div>
-            </div>
-            
-        </nav>
+    <main>
+        <div class="icon">
+            <svg heigth="80" width="80">
+                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+            </svg>
+            <i class='bx bx-home'></i></p><span>Home</span></label>
 
-        <div class="mobile-menu inactive">
-            <ul>
-              <li>
-                <a href="/">HOME</a>
-              </li>
-              <li>
-                <a href="/">About</a>
-              </li>
-              <li>
-                <a href="/">Folio</a>
-              </li>
-              <li>
-                <a href="/">Blog</a>
-              </li>              
-            </ul>        
+        </div>         
+        
+        <div class="icon">
+            <svg heigth="80" width="80">
+                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+            </svg>
+            <i class='bx bxs-star-half'></i></p><span>About</span></label>
+        </div>
+
+        <div class="icon">
+            <svg heigth="80" width="80">
+                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+            </svg>
+            <i class='bx bx-folder-open'></i></p><span>Folio</span></label>
+        </div>
+
+        <div class="icon">
+            <svg heigth="80" width="80">
+                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+            </svg>
+            <i class='bx bx-book-bookmark'></i></p><span>Blog</span></label>
         </div>
 
     </header>
