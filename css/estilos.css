@@ -197,7 +197,7 @@ svg circle {
       transition: all 300ms;
     }
     .pie-pagina .grupo-1 .red-social a:hover{
-      color: aqua;
+      color: rgb(0, 149, 255);
     }
     .pie-pagina .grupo-2{
       background-color: #3b3e85;
