@@ -102,6 +102,52 @@ html {
     line-height: 5rem;
     border-radius: 50%;
   }
+
+  .section-b {
+    background-color: #333;
+  }
+
+  #titulo2 {
+    color: white;
+    text-align: center;
+    background-color: #FC3C23 ;
+    font-size: 3.5rem;
+    margin: 30px;
+    padding: 5px;
+  }
+
+  .parrafoSectionB {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .parrafoMore1{
+    color: white ;
+    font-size: 2.5rem;
+    
+  }
+
+  .parrafoMore2{
+    color: white;
+    font-size: 2.5rem;
+  }
+
+ .more_text {
+  text-align: center;
+  
+ }
+
+ .read {
+  
+  background-color: #BA1E68 ;
+ }
+
+ .img2 {
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
   
   /*Bar Style*/
   
